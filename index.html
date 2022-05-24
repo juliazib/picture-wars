@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="script.js" defer></script>
+        <title>Picture Wars</title>
+    </head>
+    <body>
+
+        <main>
+
+            <section id="main">
+
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="https://www.linkedin.com/in/julia-zibordi/" target="_blank">
+                                Contato
+                            </a>
+                        </li>
+        
+                        <li>
+                            <a href="#sobre">
+                                Sobre
+                            </a>
+                        </li>
+        
+                        <li>
+                            <a href="https://apod.nasa.gov/apod/astropix.html" target="_blank">
+                                NASA APOD
+                            </a>
+                        </li>
+        
+                    </ul>
+                </nav>
+
+                <header>
+                    <figure>
+                        <img src="assets/opening-txt-2.png">
+                    </figure>
+                </header>
+    
+                <section>
+    
+                    <p>
+                        Escolha uma data e descubra um evento astronômico.
+                    </p>
+    
+                    <p>
+                        Que tal ver a foto tirada pela NASA no dia do seu aniversário e comparar com a dos seus amigos para saber quem tem a melhor foto?
+                    </p>
+    
+                    <p>
+                        Se você está pronto, clique no botão abaixo. Que a força esteja com você...
+                    </p>
+    
+                    <button>
+                        <a href="#dateInput">
+                            Prosseguir
+                        </a>
+                    </button>
+    
+                </section>
+            </section>
+
+            <section id="dateInput">
+                
+                <label for="date">
+                    Escolha uma data:
+                </label>
+
+                <input type="date" id="date" name="date">
+
+                <button id="ver">Ver</button>
+
+                <h2 id="title">
+
+                </h2>
+
+                <figure>
+
+                    <iframe id="video">
+
+                    </iframe>
+
+
+                    <img id="image" src="" alt="">
+
+                </figure>
+
+                <p id="explanation">
+
+                </p>
+
+            </section>
+
+            <section id="sobre">
+
+                <figure>
+                    <img src="https://i.pinimg.com/564x/9c/ad/8a/9cad8a889ea6008430edc71c970c16cf.jpg" alt="nuvem cósmica">
+                </figure>
+
+                <h3>
+                    Sobre
+                </h3>
+
+                <p>
+                    Astronomy Picture of the Day (APOD) é um site fornecido pela NASA e pela Michigan Technological University (MTU). De acordo com o site, "a cada dia uma imagem ou fotografia diferente do nosso universo é apresentada, juntamente com uma breve explicação escrita por um astrônomo profissional."As fotos e descrições geralmente se relacionam a eventos atuais em astronomia e exploração espacial."
+                </p>
+
+            </section>
+
+        </main>
+        
+    </body>
+</html>
