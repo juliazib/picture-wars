@@ -5,6 +5,9 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
         <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
         <script src="script.js" defer></script>
         <title>Picture Wars</title>
@@ -13,24 +16,24 @@
 
         <main>
 
-            <section id="main">
+            <section id="main-content" class="viewport-height">
 
                 <nav>
-                    <ul>
+                    <ul class="flex row">
                         <li>
-                            <a href="https://www.linkedin.com/in/julia-zibordi/" target="_blank">
+                            <a href="https://www.linkedin.com/in/julia-zibordi/" target="_blank" class="varela-round-white">
                                 Contato
                             </a>
                         </li>
         
                         <li>
-                            <a href="#sobre">
+                            <a href="#sobre" class="varela-round-white">
                                 Sobre
                             </a>
                         </li>
         
                         <li>
-                            <a href="https://apod.nasa.gov/apod/astropix.html" target="_blank">
+                            <a href="https://apod.nasa.gov/apod/astropix.html" target="_blank" class="varela-round-white">
                                 NASA APOD
                             </a>
                         </li>
@@ -38,46 +41,71 @@
                     </ul>
                 </nav>
 
-                <header>
-                    <figure>
-                        <img src="assets/opening-txt-2.png">
-                    </figure>
-                </header>
-    
-                <section>
-    
-                    <p>
-                        Escolha uma data e descubra um evento astronômico.
-                    </p>
-    
-                    <p>
-                        Que tal ver a foto tirada pela NASA no dia do seu aniversário e comparar com a dos seus amigos para saber quem tem a melhor foto?
-                    </p>
-    
-                    <p>
-                        Se você está pronto, clique no botão abaixo. Que a força esteja com você...
-                    </p>
-    
-                    <button>
-                        <a href="#dateInput">
-                            Prosseguir
+                <section class="flex column align-center">
+                    <header>
+                        <figure>
+                            <img src="assets/opening-txt-2.png">
+                        </figure>
+                    </header>
+        
+                    <section  id="opening-txt" class="flex column justify-center">
+        
+                        <p class="varela-round-white text-align-center texto">
+                            Escolha uma data e descubra um evento astronômico.
+                        </p>
+        
+                        <p class="varela-round-white text-align-center texto">
+                            Que tal ver a foto tirada pela NASA no dia do seu aniversário e comparar com a dos seus amigos para saber quem tem a melhor foto?
+                        </p>
+        
+                        <p class="varela-round-white text-align-center texto">
+                            Se você está pronto, clique no botão abaixo. Que a força esteja com você... 
+                        </p>
+
+                        <a href="#dateInput" class="varela-round-white flex row justify-center">
+                            <button class="flex row justify-center varela-round-white" id="prosseguir-btn">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                    Prosseguir
+                            </button>
                         </a>
-                    </button>
-    
+        
+                    </section>
                 </section>
             </section>
 
-            <section id="dateInput">
+            <section id="sobre" class="viewport-height flex row">
+
+                <figure>
+                    <img src="assets/img-div.png" alt="nuvem cósmica" class="viewport-height">
+                </figure>
+
+                <div class="flex column align-center">
+                    <h3 class="varela-round-black">
+                        Sobre
+                    </h3>
+    
+                    <p class="varela-round-black">
+                        Astronomy Picture of the Day (APOD) é um site fornecido pela NASA e pela Michigan Technological University (MTU). De acordo com o site, "a cada dia uma imagem ou fotografia diferente do nosso universo é apresentada, juntamente com uma breve explicação escrita por um astrônomo profissional." As fotos e descrições geralmente se relacionam a eventos atuais em astronomia e exploração espacial."
+                    </p>
+                </div>
                 
-                <label for="date">
-                    Escolha uma data:
+
+            </section>
+
+            <section id="dateInput" class="viewport-height flex column align-center">
+                
+                <label id="date-label "for="date" class="varela-round-black">
+                    Escolha uma data a partir de 16 de junho de 1995 ou clique no botão para ver a foto do dia de hoje:
                 </label>
 
                 <input type="date" id="date" name="date">
 
                 <button id="ver">Ver</button>
 
-                <h2 id="title">
+                <h2 id="title" class="varela-round-black">
 
                 </h2>
 
@@ -92,24 +120,8 @@
 
                 </figure>
 
-                <p id="explanation">
+                <p id="explanation" class="varela-round-black">
 
-                </p>
-
-            </section>
-
-            <section id="sobre">
-
-                <figure>
-                    <img src="https://i.pinimg.com/564x/9c/ad/8a/9cad8a889ea6008430edc71c970c16cf.jpg" alt="nuvem cósmica">
-                </figure>
-
-                <h3>
-                    Sobre
-                </h3>
-
-                <p>
-                    Astronomy Picture of the Day (APOD) é um site fornecido pela NASA e pela Michigan Technological University (MTU). De acordo com o site, "a cada dia uma imagem ou fotografia diferente do nosso universo é apresentada, juntamente com uma breve explicação escrita por um astrônomo profissional."As fotos e descrições geralmente se relacionam a eventos atuais em astronomia e exploração espacial."
                 </p>
 
             </section>
