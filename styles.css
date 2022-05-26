@@ -6,7 +6,7 @@
 
 html, body {
     height:100%;
-  }
+}
 
 #main-content {
     background-image: url(assets/main-bg.jpg);
@@ -16,7 +16,7 @@ html, body {
 }
 
 #dateInput {
-    margin: 0 20% 0;
+    margin: 3% 20% 0;
 }
 
 #dateInput figure img {
@@ -26,7 +26,11 @@ html, body {
 }
 
 #date-label {
-    margin-top: 3%;
+   margin: 0 2% 0;
+}
+
+li a:hover {
+    color: #c091fd;
 }
 
 header {
@@ -140,6 +144,38 @@ li {
     margin: 1.5%;
 }
 
+.date-container {
+    margin: 2%;
+}
+
+.date-container input {
+    border: 1px solid #231F20;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.date-container button {
+    margin-left: 1%;
+    border: none;
+    background-color: #231F20;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 15px;
+    transition: background 0.2s;
+}
+
+.date-container button:hover {
+    border: 1px solid #231F20;
+    color: #231F20;
+    background-color: white;
+    cursor: pointer;
+}
+
+iframe {
+    border: none;
+}
+
 .flex {
     display: flex;
 }
@@ -182,6 +218,35 @@ a{
     font-size: 16px;
 }
 
+.sobre-txt h3 {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    font-size: 18px;
+}
 
+.sobre-txt p {
+    margin: 0 5% 0;
+    margin-bottom: 3%;
+}
 
+#title {
+    font-size: 18px;
+    margin-bottom: 2%;
+}
 
+#image {
+    margin-bottom: 2%;
+}
+
+footer {
+    background-color:#231F20;
+    padding: 2%;
+}
+
+footer a {
+    margin-bottom: 1%;
+}
+
+footer a:hover {
+    color:#c091fd;
+}

@@ -13,6 +13,7 @@
         <title>Picture Wars</title>
     </head>
     <body>
+        <a name="topo"></a>
 
         <main>
 
@@ -55,7 +56,7 @@
                         </p>
         
                         <p class="varela-round-white text-align-center texto">
-                            Que tal ver a foto tirada pela NASA no dia do seu aniversário e comparar com a dos seus amigos para saber quem tem a melhor foto?
+                            Que tal ver a foto postada pela NASA no dia do seu aniversário e comparar com a dos seus amigos para saber quem tem a melhor foto?
                         </p>
         
                         <p class="varela-round-white text-align-center texto">
@@ -82,7 +83,7 @@
                     <img src="assets/img-div.png" alt="nuvem cósmica" class="viewport-height">
                 </figure>
 
-                <div class="flex column align-center">
+                <div class="flex column align-center sobre-txt">
                     <h3 class="varela-round-black">
                         Sobre
                     </h3>
@@ -90,43 +91,54 @@
                     <p class="varela-round-black">
                         Astronomy Picture of the Day (APOD) é um site fornecido pela NASA e pela Michigan Technological University (MTU). De acordo com o site, "a cada dia uma imagem ou fotografia diferente do nosso universo é apresentada, juntamente com uma breve explicação escrita por um astrônomo profissional." As fotos e descrições geralmente se relacionam a eventos atuais em astronomia e exploração espacial."
                     </p>
+
+                    <p class="varela-round-black">
+                        Esse site foi criado com o intuito de deixar as imagens da NASA APOD ainda mais acessíveis. Role para baixo para usar a ferramenta de busca. Uma dica: perceba como a qualidade das fotos postadas melhora ao longo do tempo! Divirta-se :)  
+                    </p>
                 </div>
                 
 
             </section>
 
             <section id="dateInput" class="viewport-height flex column align-center">
-                
+
                 <label id="date-label "for="date" class="varela-round-black">
-                    Escolha uma data a partir de 16 de junho de 1995 ou clique no botão para ver a foto do dia de hoje:
+                    Escolha uma data a partir de 16 de junho de 1995:
                 </label>
-
-                <input type="date" id="date" name="date">
-
-                <button id="ver">Ver</button>
+                
+                <div class="flex row date-container">
+                    <input type="date" id="date" name="date" class="varela-round-black">
+    
+                    <button id="ver" class="varela-round-white">Ver</button>
+                </div>
 
                 <h2 id="title" class="varela-round-black">
 
                 </h2>
-
+    
                 <figure>
-
+    
                     <iframe id="video">
-
+    
                     </iframe>
-
-
+    
+    
                     <img id="image" src="" alt="">
-
+    
                 </figure>
-
+    
                 <p id="explanation" class="varela-round-black">
-
+    
                 </p>
-
+    
             </section>
 
         </main>
+
+        <footer class="flex column align-center">
+            <a href="#topo" class="varela-round-white">Volte para o topo.</a>
+            <p class="varela-round-white">Julia Zibordi | Resilia T-19</p>
+        </footer>
         
     </body>
 </html>

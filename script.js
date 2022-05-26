@@ -1,6 +1,5 @@
 $("#ver").click(function() {
     let date = $("#date").val()
-    
     $.ajax ({
         url: `https://api.nasa.gov/planetary/apod?api_key=l1wMSZ8t7d5yfFXWEQTAVuRjSfV3OJ3NuOvniUXv&date=${date}`,
         type: "GET",
